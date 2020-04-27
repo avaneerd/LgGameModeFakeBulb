@@ -1,7 +1,7 @@
 import os
 from lg import Remote
 
-address = Remote.find_tvs(first_only=True)
+address = os.environ['LG_IP_ADDRESS']
 
 remote = Remote(address)
 
